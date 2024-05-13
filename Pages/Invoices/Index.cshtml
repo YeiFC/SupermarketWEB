@@ -8,15 +8,12 @@
 <p>
     <a asp-page="Create" class="btn btn-success">Create New</a>
 </p>
-
+<table>
 <table class="table">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Invoices[0].Number)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Invoices[0].CustomerId)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Invoices[0].Date)
@@ -35,9 +32,6 @@
                     @Html.DisplayFor(modelItem => item.Number)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.CustomerId)
-                </td>
-                <td>
                     @Html.DisplayFor(modelItem => item.Date)
                 </td>
                 <td>
@@ -52,4 +46,5 @@
             </tr>
         }
     </tbody>
+</table>
 </table>

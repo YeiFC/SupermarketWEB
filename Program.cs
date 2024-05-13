@@ -32,7 +32,7 @@ namespace SupermarketWEB
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             app.MapRazorPages();
 
